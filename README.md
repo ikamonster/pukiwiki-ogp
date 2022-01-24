@@ -44,3 +44,5 @@ ogp.inc.php を PukiWiki の plugin ディレクトリに配置してくださ�
 本プラグインはデフォルトで属性に「og」プリフィクスのついた meta タグを出力します。  
 そのため、スキンファイル内の head または html タグ（つまり meta タグの親要素）にOGP名前空間プリフィクス宣言「``prefix="og: http://ogp.me/ns#"``」を加えることを推奨します。  
 ただし、必須ではありません（RDFa Initial Context 仕様において、og は広く普及しているプリフィクスのひとつとして宣言の省略が認められている）。
+
+Facebook用App-ID（PLUGIN_OGP_FACEBOOK_APPID定数）を設定する場合は、Facebook名前空間プリフィクス宣言「``prefix="fb: http://ogp.me/ns/fb#"``」が必須となります。
