@@ -8,7 +8,9 @@ OGPメタタグを出力する[PukiWiki](https://pukiwiki.osdn.jp/)用プラグ�
 
 ## インストール
 
-ogp.inc.php を PukiWiki の plugin ディレクトリに配置してください。
+下記GitHubページからダウンロードした ogp.inc.php を PukiWiki の plugin ディレクトリに配置してください。
+
+[https://github.com/ikamonster/pukiwiki-ogp](https://github.com/ikamonster/pukiwiki-ogp)
 
 ## 使い方
 
