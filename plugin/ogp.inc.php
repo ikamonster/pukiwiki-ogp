@@ -1,7 +1,7 @@
 <?php
 /*
 PukiWiki - Yet another WikiWikiWeb clone.
-ogp.inc.php, v1.00 2020 M.Taniguchi
+ogp.inc.php, v1.01 2020 M.Taniguchi
 License: GPL v3 or (at your option) any later version
 
 OGP metaタグを出力するプラグイン。
@@ -44,7 +44,7 @@ function plugin_ogp_convert() {
 		$prefix = (PLUGIN_OGP_NS_PREFIX)? PLUGIN_OGP_NS_PREFIX : 'og';
 		$page = $vars['page'];
 		$isHome = ($page === $defaultpage);
-		$url = htmlsc(get_script_uri() . (!$isHome ? '?' . str_replace('%2F', '/', urlencode($page)) : ''));
+		$url = htmlsc(get_page_uri($page, PKWK_URI_ABSOLUTE));
 		$title = htmlsc(($title)? $title : ($isHome ? $page_title : $page . ' - ' . $page_title));
 		$desc = htmlsc(($desc)? $desc : $page . ' - ' . $page_title);
 
